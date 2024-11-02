@@ -1,0 +1,118 @@
+[class^=border-],
+[class*=" border-"] {
+  --border-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+
+.border-top {
+  border-style: none;
+  border-top-style: solid;
+}
+
+.border-bottom {
+  border-style: none;
+  border-bottom-style: solid;
+}
+
+.border-left {
+  border-style: none;
+  border-left-style: solid;
+}
+
+.border-right {
+  border-style: none;
+  border-right-style: solid;
+}
+
+.border-off {
+  border-color: transparent !important;
+}
+
+.border-dark {
+  --border-color: var(--palette-black);
+}
+
+.border-dark-low {
+  --border-color: var(--palette-black-7);
+}
+
+.border-dark-mid {
+  --border-color: var(--palette-black-10);
+}
+
+.border-light {
+  --border-color: var(--palette-white);
+}
+
+.border-light-low {
+  --border-color: var(--palette-white-20);
+}
+
+.border-light-mid {
+  --border-color: var(--palette-white-50);
+}
+
+.border-primary {
+  --border-color: var(--palette-primary-base);
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 767px) {
+  .border-off-sm {
+    border-color: transparent !important;
+  }
+  .border-top-sm {
+    border-style: none;
+    border-top-style: solid;
+  }
+  .border-bottom-sm {
+    border-style: none;
+    border-bottom-style: solid;
+  }
+  .border-left-sm {
+    border-style: none;
+    border-left-style: solid;
+  }
+  .border-right-sm {
+    border-style: none;
+    border-right-style: solid;
+  }
+  .border-1-sm {
+    border-width: 1px;
+  }
+  .border-2-sm {
+    border-width: 2px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .border-dark {
+    --border-color: var(--palette-white-50);
+  }
+  .border-dark-low {
+    --border-color: var(--palette-white-20);
+  }
+  .border-dark-mid {
+    --border-color: var(--palette-white-40);
+  }
+  .border-light {
+    --border-color: var(--palette-white-50);
+  }
+  .border-light-low {
+    --border-color: var(--palette-white-20);
+  }
+  .border-light-mid {
+    --border-color: var(--palette-white-40);
+  }
+  .border-primary {
+    --border-color: var(--palette-primary-mid);
+  }
+}

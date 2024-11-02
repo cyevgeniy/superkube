@@ -1,0 +1,86 @@
+.alert {
+    --alert-background-color: var(--palette-neutral-lighter);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-neutral-darker);
+    --alert-padding: 4rem 5rem;
+    --alert-font-size: var(--type-scale-14);
+    --alert-font-weight: normal;
+    --alert-line-height: var(--body-text-line);
+    --alert-border-radius: var(--radius-base);
+    --alert-border-width: 1px;
+    --alert-border-style: solid;
+    --alert-box-shadow: none;
+    --alert-close-size: 14px;
+    --alert-space: 0.5em;
+    position: relative;
+    font-weight: var(--alert-font-weight);
+    font-size: var(--alert-font-size);
+    line-height: var(--alert-line-height);
+    padding: var(--alert-padding);
+    border-radius: var(--alert-border-radius);
+    border-style: var(--alert-border-style);
+    border-width: var(--alert-border-width);
+    box-shadow: var(--alert-box-shadow);
+    background-color: var(--alert-background-color);
+    border-color: var(--alert-border-color);
+    color: var(--alert-color);
+  }
+  .alert h2, .alert h3, .alert h4, .alert h5, .alert h6, .alert p, .alert a {
+    color: inherit;
+  }
+  .alert * + p {
+    margin-top: var(--alert-space);
+  }
+  .alert a:hover {
+    opacity: 0.6;
+  }
+  .alert svg {
+    fill: currentColor;
+  }
+  .alert .close {
+    --close-size: var(--alert-close-size);
+    position: absolute;
+    right: 0.65em;
+    top: 0.85em;
+  }
+  
+  .alert-info {
+    --alert-background-color: var(--palette-active-lightest);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-active-darker);
+  }
+  
+  .alert-success {
+    --alert-background-color: var(--palette-positive-lightest);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-positive-darker);
+  }
+  
+  .alert-error {
+    --alert-background-color: var(--palette-negative-lightest);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-negative-darker);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .alert {
+      --alert-background-color: var(--palette-neutral-lighter);
+      --alert-border-color: transparent;
+      --alert-color: var(--palette-neutral-darker);
+    }
+    .alert-info {
+      --alert-background-color: var(--palette-active-lighter);
+      --alert-border-color: transparent;
+      --alert-color: var(--palette-active-darker);
+    }
+    .alert-success {
+      --alert-background-color: var(--palette-positive-lighter);
+      --alert-border-color: transparent;
+      --alert-color: var(--palette-positive-darker);
+    }
+    .alert-error {
+      --alert-background-color: var(--palette-negative-lighter);
+      --alert-border-color: transparent;
+      --alert-color: var(--palette-negative-darker);
+    }
+  }
