@@ -1,0 +1,50 @@
+[class^=bg-],
+[class*=" bg-"] {
+  --background-color: transparent;
+  background-color: var(--background-color);
+}
+
+.bg-light {
+  --background-color: var(--palette-white);
+}
+
+.bg-dark {
+  --background-color: var(--palette-black);
+}
+
+.bg-primary {
+  --background-color: var(--palette-primary-base);
+}
+
+.bg-aluminum {
+  --background-color: var(--palette-neutral-lightest);
+}
+
+.bg-silver {
+  --background-color: var(--palette-neutral-lighter);
+}
+
+.bg-platinum {
+  --background-color: var(--palette-neutral-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-light {
+    --background-color: var(--palette-white-7);
+  }
+  .bg-dark {
+    --background-color: var(--palette-black);
+  }
+  .bg-primary {
+    --background-color: var(--palette-primary-mid);
+  }
+  .bg-aluminum {
+    --background-color: var(--palette-surface-200);
+  }
+  .bg-silver {
+    --background-color: var(--palette-surface-300);
+  }
+  .bg-platinum {
+    --background-color: var(--palette-surface-400);
+  }
+}
